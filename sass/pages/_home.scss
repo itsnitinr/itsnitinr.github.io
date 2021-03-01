@@ -1,0 +1,111 @@
+@use '../abstracts' as *;
+
+.hero {
+  background: $background-primary;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &__content {
+    padding: 0 1.5rem;
+    margin: 0 auto;
+    width: 1170px;
+
+    &__greeting {
+      color: $accent-primary;
+      font-size: 2rem;
+    }
+
+    &__name {
+      font-size: 7.5rem;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+
+    &__headline {
+      color: $accent-primary;
+      font-size: 6rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      margin-top: -1rem;
+    }
+
+    &__about {
+      color: $accent-primary;
+      font-size: 1.75rem;
+      width: 50%;
+      margin-bottom: 5rem;
+    }
+
+    &__button {
+      cursor: pointer;
+      background: transparent;
+      margin-right: 2rem;
+      padding: 1.6rem 3.2rem;
+      font-size: 1.6rem;
+      background: $background-secondary;
+      outline: none;
+      color: white;
+      border-radius: 5px;
+      border: 2px solid $background-secondary;
+
+      &:hover {
+        filter: brightness(1.1);
+      }
+
+      &--outlined {
+        cursor: pointer;
+        margin-right: 2rem;
+        padding: 1.6rem 3.2rem;
+        font-size: 1.6rem;
+        background: $background-primary;
+        outline: none;
+        color: white;
+        border-radius: 5px;
+        border: 2px solid $accent-primary;
+
+        &:hover {
+          filter: brightness(1.2);
+        }
+      }
+    }
+  }
+
+  &__socials {
+    width: 40px;
+    position: absolute;
+    bottom: 0px;
+    left: auto;
+    right: 6rem;
+    z-index: 10;
+    color: $accent-primary;
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+
+      a {
+        color: $accent-primary;
+        text-decoration: none;
+        margin: 20px auto;
+        font-size: 1.4rem;
+        padding: 10px;
+        letter-spacing: 0.1em;
+        writing-mode: vertical-rl;
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 90px;
+        margin: 0 auto;
+        background: $accent-primary;
+      }
+    }
+  }
+}
