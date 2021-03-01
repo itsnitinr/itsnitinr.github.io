@@ -1,0 +1,44 @@
+@use '../abstracts/' as *;
+
+.preloader {
+  background: $background-primary;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    color: $accent-primary;
+    font-size: 3rem;
+  }
+
+  &__slider {
+    background: $background-secondary;
+    color: $accent-primary;
+    font-size: 2.5rem;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__hide {
+    background: $background-primary;
+    overflow: hidden;
+  }
+
+  &__text {
+    display: inline-block;
+    transform: translateY(100%);
+  }
+}

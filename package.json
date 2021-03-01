@@ -1,0 +1,17 @@
+{
+  "name": "itsnitinr-portfolio",
+  "version": "1.0.0",
+  "description": "A developer-centric portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass sass/main.scss css/style.css --watch"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Nitin Ranganath",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.32.8"
+  }
+}
