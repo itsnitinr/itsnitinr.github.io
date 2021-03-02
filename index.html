@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Nitin Ranganath</title>
   </head>
@@ -18,7 +22,9 @@
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>01</span>About Me</a>
+            <a href="#about" class="navigation__link"
+              ><span>01</span>About Me</a
+            >
           </li>
           <li class="navigation__item">
             <a href="#" class="navigation__link"><span>02</span>Projects</a>
@@ -34,6 +40,25 @@
           </li>
         </ul>
       </nav>
+    </div>
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="preloader__content">
+        <h1 class="preloader__hide">
+          <span class="preloader__text">I Craft</span>
+        </h1>
+        <h1 class="preloader__hide">
+          <span class="preloader__text">Websites That</span>
+        </h1>
+        <h1 class="preloader__hide">
+          <span class="preloader__text">You'd Love Using!</span>
+        </h1>
+      </div>
+    </div>
+    <div class="preloader__slider">
+      <h4>Welcome to</h4>
+      <h1>Nitin Ranganath's</h1>
+      <h4>portfolio</h4>
     </div>
     <!-- Hero -->
     <main class="hero">
@@ -61,25 +86,103 @@
         </div>
       </div>
     </main>
-    <!-- Preloader -->
-    <div class="preloader">
-      <div class="preloader__content">
-        <h1 class="preloader__hide">
-          <span class="preloader__text">I Craft</span>
-        </h1>
-        <h1 class="preloader__hide">
-          <span class="preloader__text">Websites That</span>
-        </h1>
-        <h1 class="preloader__hide">
-          <span class="preloader__text">You'd Love Using!</span>
-        </h1>
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="about__content container">
+        <div class="about__content__icons">
+          <div class="about__content__icons__icon">
+            <i class="devicon-html5-plain"></i>
+            <p>HTML</p>
+          </div>
+          <div class="about__content__icons__icon">
+            <i class="devicon-css3-plain"></i>
+            <p>CSS</p>
+          </div>
+          <div class="about__content__icons__icon">
+            <i class="devicon-javascript-plain"></i>
+            <p>JavaScript</p>
+          </div>
+          <div class="about__content__icons__icon">
+            <i class="devicon-typescript-plain"></i>
+            <p>TypeScript</p>
+          </div>
+          <div class="about__content__icons__icon">
+            <i class="devicon-react-original"></i>
+            <p>React</p>
+          </div>
+          <div class="about__content__icons__icon">
+            <i class="devicon-nodejs-plain"></i>
+            <p>NodeJS</p>
+          </div>
+          <div class="about__content__icons__icon">
+            <i class="devicon-mongodb-plain"></i>
+            <p>MongoDB</p>
+          </div>
+          <div class="about__content__icons__icon">
+            <i class="devicon-postgresql-plain"></i>
+            <p>PostgreSQL</p>
+          </div>
+          <div class="about__content__icons__icon">
+            <i class="devicon-express-original"></i>
+            <p>Express</p>
+          </div>
+          <div class="about__content__icons__icon">
+            <i class="devicon-vuejs-plain"></i>
+            <p>Vue</p>
+          </div>
+          <div class="about__content__icons__icon">
+            <i class="devicon-redux-original"></i>
+            <p>Redux</p>
+          </div>
+          <div class="about__content__icons__icon">
+            <i class="devicon-sass-original"></i>
+            <p>SASS</p>
+          </div>
+          <div class="about__content__icons__icon">
+            <i class="devicon-materialui-plain"></i>
+            <p>Material UI</p>
+          </div>
+          <div class="about__content__icons__icon">
+            <i class="devicon-bootstrap-plain"></i>
+            <p>Bootstrap</p>
+          </div>
+          <div class="about__content__icons__icon">
+            <i class="devicon-python-plain"></i>
+            <p>Python</p>
+          </div>
+          <div class="about__content__icons__icon">
+            <i class="devicon-java-plain"></i>
+            <p>Java</p>
+          </div>
+        </div>
+        <div class="about__content__text">
+          <h2 class="about__content__text__heading">About Me</h2>
+          <p class="about__content__text__paragraph">
+            I'm a computer engineering student and an aspiring software
+            developer based in Mumbai, India who's fascinated with web
+            technologies. Here's what I can help you with:
+          </p>
+          <p class="about__content__text__skill">
+            💻 Building
+            <span class="accent-bg">highly interactive front end</span>
+            and user interfaces as
+            <span class="bold">single page applications</span>
+          </p>
+          <p class="about__content__text__skill">
+            🗄️ Developing
+            <span class="accent-bg"
+              >robust, efficient and secure backend API</span
+            >
+            with <span class="bold">NoSQL database connectivity</span>
+          </p>
+          <p class="about__content__text__skill">
+            🎨 Design
+            <span class="accent-bg">user centric interfaces</span>
+            to achieve top notch <span class="bold">user experience</span>
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="preloader__slider">
-      <h4>Welcome to</h4>
-      <h1>Nitin Ranganath's</h1>
-      <h4>portfolio</h4>
-    </div>
+    </section>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
       integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="

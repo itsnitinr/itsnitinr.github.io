@@ -1,0 +1,28 @@
+@use '../abstracts' as *;
+
+.container {
+  margin: 0 auto;
+  width: 1170px;
+
+  @include responsive(tablet-landscape) {
+    width: 950px;
+  }
+
+  @include responsive(tablet-portrait) {
+    width: 700px;
+  }
+
+  @include responsive(phone) {
+    width: 400px;
+  }
+}
+
+.accent-bg {
+  background: $accent-primary;
+  color: $background-primary;
+  padding: 0 0.5rem;
+}
+
+.bold {
+  font-weight: 500;
+}

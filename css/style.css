@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 *,
 *::before,
 *::after {
@@ -13,6 +13,36 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1170px;
+}
+@media (max-width: 75rem) {
+  .container {
+    width: 950px;
+  }
+}
+@media (max-width: 56.25em) {
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 37.5em) {
+  .container {
+    width: 400px;
+  }
+}
+
+.accent-bg {
+  background: #a0aec0;
+  color: #192127;
+  padding: 0 0.5rem;
+}
+
+.bold {
+  font-weight: 500;
 }
 
 .preloader {
@@ -405,6 +435,83 @@ body {
   height: 90px;
   margin: 0 auto;
   background: #a0aec0;
+}
+
+.about {
+  background: #0e141b;
+  padding: 8rem 0;
+}
+@media (max-width: 37.5em) {
+  .about {
+    padding: 5rem 2rem;
+  }
+}
+.about__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about__content__icons {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4rem 0 0;
+  justify-content: center;
+}
+@media (max-width: 37.5em) {
+  .about__content__icons {
+    width: 100%;
+    order: 2;
+    padding: 0 2rem;
+  }
+}
+.about__content__icons__icon {
+  color: #a0aec0;
+  font-size: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+@media (max-width: 37.5em) {
+  .about__content__icons__icon {
+    font-size: 3rem;
+    margin: 1.5rem;
+  }
+}
+.about__content__icons__icon p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+.about__content__text {
+  width: 50%;
+}
+@media (max-width: 37.5em) {
+  .about__content__text {
+    width: calc(100% - 2rem);
+    order: 1;
+    margin-bottom: 2rem;
+  }
+}
+.about__content__text__heading {
+  color: white;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+.about__content__text__paragraph {
+  color: #a0aec0;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.about__content__text__skill {
+  color: #a0aec0;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 37.5em) {
+  .about__content__text__skill {
+    margin-bottom: 1.25rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

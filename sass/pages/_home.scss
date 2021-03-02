@@ -188,3 +188,83 @@
     }
   }
 }
+
+.about {
+  background: #0e141b;
+  padding: 8rem 0;
+
+  @include responsive(phone) {
+    padding: 5rem 2rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__icons {
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 4rem 0 0;
+      justify-content: center;
+
+      @include responsive(phone) {
+        width: 100%;
+        order: 2;
+        padding: 0 2rem;
+      }
+
+      &__icon {
+        color: $accent-primary;
+        font-size: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem;
+
+        @include responsive(phone) {
+          font-size: 3rem;
+          margin: 1.5rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+          text-align: center;
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    &__text {
+      width: 50%;
+
+      @include responsive(phone) {
+        width: calc(100% - 2rem);
+        order: 1;
+        margin-bottom: 2rem;
+      }
+
+      &__heading {
+        color: white;
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+      }
+
+      &__paragraph {
+        color: $accent-primary;
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+      }
+
+      &__skill {
+        color: $accent-primary;
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+
+        @include responsive(phone) {
+          margin-bottom: 1.25rem;
+        }
+      }
+    }
+  }
+}
