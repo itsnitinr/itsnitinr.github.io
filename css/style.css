@@ -31,6 +31,11 @@ body {
   color: #a0aec0;
   font-size: 3rem;
 }
+@media (max-width: 37.5em) {
+  .preloader__content {
+    font-size: 1.75rem;
+  }
+}
 .preloader__slider {
   background: #2d3748;
   color: #a0aec0;
@@ -46,6 +51,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 37.5em) {
+  .preloader__slider {
+    font-size: 1.75rem;
+    text-align: center;
+  }
 }
 .preloader__hide {
   background: #192127;

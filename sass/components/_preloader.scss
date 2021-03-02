@@ -15,6 +15,10 @@
   &__content {
     color: $accent-primary;
     font-size: 3rem;
+
+    @include responsive(phone) {
+      font-size: 1.75rem;
+    }
   }
 
   &__slider {
@@ -32,6 +36,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @include responsive(phone) {
+      font-size: 1.75rem;
+      text-align: center;
+    }
   }
 
   &__hide {
