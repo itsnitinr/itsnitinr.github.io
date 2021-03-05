@@ -13,7 +13,11 @@
   }
 
   @include responsive(phone) {
-    width: 400px;
+    width: 375px;
+  }
+
+  @include responsive(small) {
+    width: 300px;
   }
 }
 
@@ -25,4 +29,16 @@
 
 .bold {
   font-weight: 500;
+}
+
+.w50 {
+  width: 47%;
+
+  @include responsive(phone) {
+    width: 100%;
+  }
+}
+
+.w100 {
+  width: 100%;
 }

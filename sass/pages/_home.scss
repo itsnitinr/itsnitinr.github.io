@@ -214,6 +214,12 @@
         padding: 0 2rem;
       }
 
+      @include responsive(small) {
+        width: 100%;
+        order: 2;
+        padding: 0;
+      }
+
       &__icon {
         color: $accent-primary;
         font-size: 4rem;

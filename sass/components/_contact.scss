@@ -1,0 +1,215 @@
+@use '../abstracts' as *;
+
+.contact {
+  background: $background-primary;
+  padding: 10rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include responsive(tablet-portrait) {
+    padding: 5rem 0;
+  }
+
+  &__container {
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    z-index: 500;
+
+    @include responsive(tablet-landscape) {
+      width: 90%;
+      min-width: auto;
+      display: flex;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    }
+
+    @include responsive(tablet-portrait) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__card {
+    position: absolute;
+    top: 4rem;
+    width: 35rem;
+    height: calc(100% - 80px);
+    background: $accent-primary;
+    z-index: 1;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+
+    @include responsive(tablet-landscape) {
+      top: 0;
+      height: 550px;
+      position: relative;
+      box-shadow: none;
+    }
+
+    @include responsive(tablet-portrait) {
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+    }
+
+    @include responsive(phone) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__heading {
+      color: $background-primary;
+      font-size: 2rem;
+    }
+
+    &__list {
+      position: relative;
+      margin: 2rem 0;
+
+      &__item {
+        position: relative;
+        list-style: none;
+        display: flex;
+        margin: 2rem 0;
+        cursor: pointer;
+        align-items: flex-start;
+
+        & span:nth-child(1) {
+          width: 30px;
+          min-width: 30px;
+
+          img {
+            max-width: 100%;
+          }
+        }
+
+        & span:nth-child(2) {
+          color: $background-primary;
+          margin-left: 1rem;
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    &__socials {
+      position: relative;
+      display: flex;
+
+      @include responsive(tablet-portrait) {
+        justify-content: center;
+        align-items: center;
+      }
+
+      @include responsive(phone) {
+        margin-top: 4rem;
+      }
+
+      li {
+        list-style: none;
+        margin-right: 1.5rem;
+      }
+    }
+  }
+
+  &__form {
+    position: absolute;
+    padding: 7rem 5rem;
+    padding-left: 25rem;
+    margin-left: 15rem;
+    width: calc(100% - 15rem);
+    height: 100%;
+    background: $background-secondary;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+
+    @include responsive(tablet-landscape) {
+      position: relative;
+      width: calc(100% - 35rem);
+      padding-left: 0;
+      margin-left: 0;
+      padding: 4rem;
+      height: 55rem;
+      box-shadow: none;
+    }
+
+    @include responsive(tablet-portrait) {
+      width: 100%;
+      height: auto;
+    }
+
+    @include responsive(phone) {
+      padding: 2.5rem;
+    }
+
+    &__heading {
+      color: $accent-primary;
+      font-size: 2.4rem;
+    }
+
+    &__container {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 3.5rem;
+    }
+
+    &__input {
+      position: relative;
+      margin-bottom: 4rem;
+
+      input,
+      textarea {
+        width: 100%;
+        resize: none;
+        padding: 0.5rem 0;
+        font-size: 1.8rem;
+        background: $background-secondary;
+        color: white;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid $accent-primary;
+
+        &:focus ~ span,
+        &:valid ~ span {
+          transform: translateY(-2.5rem);
+          font-size: 1.2rem;
+        }
+      }
+
+      textarea {
+        height: 120px;
+        font-size: 2.4rem;
+      }
+
+      span {
+        color: white;
+        font-size: 1.6rem;
+        position: absolute;
+        left: 0;
+        padding: 5px 0;
+        pointer-events: none;
+        font-weight: 300;
+        transition: 0.3s;
+      }
+    }
+
+    &__button input {
+      position: relative;
+      cursor: pointer;
+      background: $accent-primary;
+      color: $background-primary;
+      border: none;
+      max-width: 15rem;
+      padding: 1.2rem 2.4rem;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+
+      &:hover {
+        filter: brightness(1.1);
+      }
+    }
+  }
+}
